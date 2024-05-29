@@ -12,9 +12,9 @@ const App = () => {
     setInput(event.target.value);
   };
 
-  const addItem = useCallback(() => {
+  const addItem = useCallback(()=>{
     setItems((prevItems) => [...prevItems, input]);
-  }, [input]);
+  },[])
 
   useEffect(() => {
     console.log("Add Item 버튼 클릭 시에는 로그가 찍히지 않아야 합니다!");
