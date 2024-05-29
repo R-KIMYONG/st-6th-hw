@@ -17,11 +17,9 @@ const App = () => {
     setInput("");
   };
 
-  const filteredItems = useMemo(()=>{
-    return items.filter((item) =>
-    item.toLocaleLowerCase().includes("item")
-  )
-  },[items]);
+  const filteredItems = useMemo(() => {
+    return items.filter((item) => item.toLocaleLowerCase().includes("item"));
+  }, [items]);
 
   return (
     <div>
